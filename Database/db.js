@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+try{
+  
 main().catch(err => console.log(err));
 
 async function main() {
@@ -58,5 +60,9 @@ try{
       Account
     }
   }catch(err){
+  console.log(err);
+}
+
+}catch(err) {
   console.log(err);
 }
